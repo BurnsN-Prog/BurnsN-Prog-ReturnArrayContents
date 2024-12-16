@@ -32,6 +32,13 @@ public class Lab {
      * @return a string representation of all values of nums, with the values separated by spaces.
      */
     public String arrayToString(int[] nums){
-        return "";
+        StringBuilder result = new StringBuilder();
+        for (int i = 0; i < nums.length; i++ ){
+            result.append(nums[i]);
+            if (i < nums.length -1){
+                result.append(" ");
+            }
+        }
+        return result.toString();
     }
 }
